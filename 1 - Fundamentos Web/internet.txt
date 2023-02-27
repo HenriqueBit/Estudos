@@ -1,0 +1,5 @@
+=========================== Como funciona a internet ==========================
+
+A internet existe e foi criada pra resolver o problema de comunicação entre computadores e o fato de eles não poderem ser conectados em grande quantidade e distância através de cabos.
+
+Pensando nisso, desenvolveram o primeiro "Roteador", onde vários computadores se conectam diretamente, e a partir daí se comunicam como se estivessem interligados.

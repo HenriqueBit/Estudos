@@ -1,0 +1,4 @@
+============================== O que é Domínio =================================
+
+Toda página web indexada(os sites conhecidos) precisa de um endereço, o dominio, é como se fosse o nome de uma pessoa em uma agenda telefônica, e é um nome profissional para ser associado a um endereço IP, em um site comum uma requisição HTTP para um site, será passada através de um dominio como:
+https://www.google.com/ nele, tudo a partir de google, faz parte do domínio, sendo que ele não leva o .br, por se tratar de um dominio internacional.

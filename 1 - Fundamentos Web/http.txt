@@ -1,0 +1,62 @@
+============================== O que é HTTP ==================================
+
+Protocolo que se integra aos outros 2(TCP e IP) e funciona baseado em
+pedidos e respostas onde o navegador envia uma requisição e o IP de destino(servidor) retorna uma página(normalmente HTML) com o conteúdo do site,
+a conexão NÃO é persistente e a cada acesso/atualização do conteúdo um novo request deve ser executado, ele não é executado somente na web, já que em aplicações desktop e mobile a aplicação se comunica com o back-end utilizando do mesmo protocolo.
+
+Uma requisição HTTP se divide em 3 partes:
+- Linha de pedidos
+   se divide entre:
+      - Identificador do método: dita qual tipo de resposta o servidor deve entregar após o fim do request Ex. GET, POST e DELETE
+      - URI do endereço: o lugar pra onde deve ser enviado o método: ex. https://www.google.com/search, "search" é o URI do endereço
+      - Versão do protocolo: 0.9, 1.1 ou 2.0
+
+- Cabeçalho
+   O cabeçalho também se divide em 3 partes, cabeçalho geral, de requisição e de entidade e é o local onde devem ser passadas as informações acerca da requisição e o servidor pode responder de formas diferentes dependendo dos valores e campos contidos aqui
+
+- Corpo/mensagem
+Corpo é onde se encontram as informações mais importantes da requisição, por exemplo: no envio de um formulário em uma página HTML, no corpo, seriam passadas as informações de resposta, como nome, e-mail, senha e etc...
+
+
+
+==========================Exemplo de requisição completa========================
+
+POST / HTTP / 1.1
+
+Host: www.codigofonte.com.br/
+User-Agent: Mozilla/5.0 (X11, Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/76.0.3809.87 Chrome/76.0.3809.87 Safari/537.36
+Accept: text/html,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: pt-br
+Accept-Encoding: gzip,deflate
+Accept-Charset: utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: Keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+
+====================================Resposta====================================
+A resposta ou "response" do servidor também pode ser divida em 3 partes
+
+- Linha de status: Aqui vão, versão do protocolo, código do status, ex. 404, e o texto associado ao status. podem ser vistos aqui: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status?retiredLocale=pt-PT
+
+- Cabeçalho: Traz informações como Content-Type, Acess-control-allow, date e etc...
+
+- Corpo:
+   A mensagem que deve ser recebida pelo client, podendo conter um HTML, um JSON, XML ou afins
+
+
+
+
+==========================Exemplo de resposta completa========================
+
+HTTP / 1.1 / 200 OK
+
+Date: Mon, 27 jul 2009 12:28:53 GMT
+Server: Nginx
+Content-Length: 19
+Content-Type: text/html; charset=utf-8
+Connection: close
+
+<h1>Olá mundo</h1>

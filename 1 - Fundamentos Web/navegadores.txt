@@ -1,0 +1,3 @@
+======================== Como funciona um navegador =========================
+
+Navegadores, de forma geral, são motores de renderização de marcação de texto(mostradores de HTML), e fazem isso de forma, onde resolvem um DNS, acessando um servidor DNS, e solicitando o IP de um servidor para onde deve ser feita uma requisição HTTP, a qual, caso seja uma página HTML, JSON ou XML, ele poderá renderizar tal marcações de texto, para mostrar em forma de interface
