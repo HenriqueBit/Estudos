@@ -1,0 +1,17 @@
+============================ Métodos HTTP =========================
+
+Os métodos HTTP, que tem sua funcionalidade explicada anteriormente, se dividem entre:
+
+- GET: Utilizado para receber uma requisição, um exemplo é quando você acessa pela primeira vez uma página web, e o navegador executa um GET para receber o HTML fonte da página com as informações do que deve ser renderizado.
+
+- HEAD: Tem o exato mesmo uso do método GET, entretanto, ele retorna um código sem o corpo, com a response indo somente até o header.
+
+- POST: Neste método, os dados são enviados para processo, um exemplo de POST, são os formulários de LOGIN, que tem como response um código de status, como 200, onde retorna se o login foi um sucesso ou não.
+
+- PUT: O método PUT, serve para realizar uma alteração nos dados, por exemplo, alterar o nome de um usuário, além disso, por convenção, junto do dado a ser alterado, e do ID do usuário ou item que deve ser alterado, também são passados todos os outros parâmetros, mesmo que inalterados, para manter a organização do código.
+
+- PATCH: O método PATCH, serve para realizar uma alteração, da mesma forma que o PUT, mas sem a convenção de passar todos os dados, por exemplo, onde você gostaria de alterar apenas o status de um usuário entre ativo e inativo.
+
+- DELETE: O método DELETE, serve para, como o nome já diz, deletar um registro, como um usuário, por exemplo, ele deve ser enviado junto de um ID para identificar o que deve ser apagado, e retorna um status code como 200.
+
+- OPTIONS: O método OPTIONS, serve para retornar as opções de request que estão liberadas para o servidor, ele deve retornar algo como, Allow: GET, POST, PUT. 
